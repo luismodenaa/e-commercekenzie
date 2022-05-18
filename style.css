@@ -1,0 +1,172 @@
+body {
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menuTop {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background: #ffffff;
+    box-shadow: 0px 20px 40px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.menuTop img {
+    width: 140px;
+    padding-left: 5%;
+}
+
+.menu nav ul li a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 18px;
+}
+
+.menuRight {
+    padding-right: 5%;
+}
+
+.menuRight ul {
+    display: flex;
+    gap: 2rem;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    gap: 1rem;
+    padding-left: 3%;
+    padding-top: 2%;
+}
+
+.products ul {
+    display: flex;
+}
+
+.cards {
+    display: block;
+    box-shadow: 0px 5px 10px 7px rgba(0, 0, 0, 0.1);
+    padding-bottom: 8%;
+    width: 300px;
+}
+
+.cards a {
+    text-decoration: none;
+    color: #242424;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 3%;
+}
+
+.cards h1 {
+    background-color: #2E245E;
+    color: #fff;
+    font-size: 16px;
+    font-weight: normal;
+    padding-left: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    max-width: 90px;
+    position: relative;
+    left: 12px;
+}
+
+.cards h2 {
+    padding: 3%;
+    font-size: 22px;
+}
+
+.cards p {
+    padding: 3%;
+    font-size: 15px;
+}
+
+.cards h3 {
+    padding: 3%;
+    color: #2E245E;
+    font-size: 17px;
+}
+
+.backImg {
+    background-color: #F5F5F5;
+}
+
+.columnRight {
+    position: absolute;
+    left: 1300px;
+    top: 140px;
+}
+
+.search {
+    align-items: center;
+}
+
+.search a {
+    text-decoration: none;
+    color: white;
+    background-color: #37268C;
+    font-size: 18px;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.search input {
+    width: 356px;
+    height: 60px;
+    font-size: 20px;
+    border: none;
+    background-color: #F5F5F5;
+    padding-left: 2%;
+}
+
+.carrinho h2 {
+    color: white;
+    background-color: #37268C;
+    padding-left: 27%;
+    padding-top: 6%;
+    height: 52px;
+}
+
+.carrinho {
+    width: 505px;
+    height: 50px;
+    padding-top: 6%;
+}
+
+.carrinhoVazio {
+    position: absolute;
+    left: 0px;
+    top: 193px;
+    width: 505px;
+    height: 300px;
+    background-color: #F5F5F5;
+}
+
+.carrinhoVazio h2 {
+    position: absolute;
+    left: 170px;
+    top: 100px;
+    color: #333333;
+    font-size: 27px;
+}
+
+.carrinhoVazio p {
+    position: absolute;
+    left: 205px;
+    top: 140px;
+    color: #333333;
+    font-size: 20px;
+}
