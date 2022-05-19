@@ -1,177 +1,234 @@
+:root {
+    --grey-100: #333333;
+    --grey-50: #828282;
+    --grey-0: #F5F5F5;
+    --color-primary: #2E245E;
+    --color-secondary: #37268C;
+}
+
 body {
-    margin: 0 auto;
-    font-family: Arial, Helvetica, sans-serif;
+    color: var(--grey-100);
+    font-family: 'Inter', sans-serif;
 }
 
-.menuTop {
-    padding-top: 1%;
-    padding-bottom: 1%;
-    background: #ffffff;
-    box-shadow: 0px 20px 40px 5px rgba(0, 0, 0, 0.1);
+header {
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
     justify-content: space-between;
-    gap: 2rem;
+    padding: 0 5%;
+    align-items: center;
+    box-shadow: 0 4px 30px -10px rgba(0, 0, 0, 0.25);
+    height: 65px;
+    width: 90vw;
+    padding-bottom: 10px;
 }
 
-.menuTop img {
-    width: 140px;
-    padding-left: 5%;
-}
-
-.menu nav ul li a {
-    text-decoration: none;
-    color: #333333;
-    font-size: 18px;
-}
-
-.menuRight {
-    padding-right: 5%;
-}
-
-.menuRight ul {
+header ul {
     display: flex;
-    gap: 2rem;
+    justify-content: space-around;
+    width: 350px;
+    list-style-type: none;
 }
 
-.menu li {
-    list-style: none;
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.filter-selected {
+    font-weight: bold;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    padding: 50px 115px;
 }
 
 .products {
-    display: grid;
-    grid-template-columns: 400px 400px 400px;
-    gap: 1rem;
-    padding-left: 3%;
-    padding-top: 2%;
-}
-
-.products ul {
     display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 0;
 }
 
-.cards {
-    display: block;
-    box-shadow: 0px 5px 10px 7px rgba(0, 0, 0, 0.1);
-    padding-bottom: 8%;
-    width: 300px;
+.card {
+    display: flex;
+    flex-direction: column;
+    max-width: 296px;
     transition: transform 0.2s ease-in-out;
+    box-shadow: 0px 5px 10px 7px rgba(0, 0, 0, 0.1);
 }
 
-.cards:hover {
+.card:hover {
     transform: scale(1.1);
 }
 
-.cards a {
-    text-decoration: none;
-    color: #242424;
-    font-size: 14px;
-    font-weight: bold;
-    padding: 3%;
-}
-
-.cards h1 {
-    background-color: #2E245E;
-    color: #fff;
-    font-size: 16px;
-    font-weight: normal;
-    padding-left: 3%;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    border-radius: 2px;
+.card figure {
+    width: 100%;
+    align-self: center;
+    background-color: var(--grey-0);
     display: flex;
     align-items: center;
-    max-width: 90px;
-    position: relative;
-    left: 12px;
+    justify-content: center;
+    margin-top: 0;
 }
 
-.cards h2 {
-    padding: 3%;
-    font-size: 22px;
+.card figure img {
+    width: 90%;
 }
 
-.cards p {
-    padding: 3%;
+.card figcaption {
+    display: none;
+}
+
+.card section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 296px;
+    padding: 0 10px 20px 10px;
+}
+
+.card .category {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 5px 6px;
+    box-shadow: 1px 1px 2px 2px var(--color-primary);
+}
+
+.font-small-size {
     font-size: 15px;
 }
 
-.cards h3 {
-    padding: 3%;
-    color: #2E245E;
-    font-size: 17px;
+.font-small-size a {
+    font-weight: bold;
 }
 
-.backImg {
-    background-color: #F5F5F5;
-}
-
-.columnRight {
-    position: absolute;
-    left: 1300px;
-    top: 140px;
-}
-
-.search {
+aside {
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
-.search a {
-    text-decoration: none;
-    color: white;
-    background-color: #37268C;
-    font-size: 18px;
-    padding-top: 4%;
-    padding-bottom: 4%;
-    padding-left: 5%;
-    padding-right: 5%;
-}
-
-.search input {
-    width: 340px;
-    height: 60px;
-    font-size: 20px;
-    border: none;
-    background-color: #F5F5F5;
-    padding-left: 2%;
-}
-
-.carrinho h2 {
-    color: white;
-    background-color: #37268C;
-    padding-left: 27%;
-    padding-top: 6%;
-    height: 52px;
-}
-
-.carrinho {
-    width: 490px;
+.search-box {
+    display: flex;
+    justify-content: space-between;
+    width: 347px;
     height: 50px;
-    padding-top: 6%;
+    gap: 8px;
 }
 
-.carrinhoVazio {
-    position: absolute;
-    left: 0px;
-    top: 193px;
-    width: 490px;
-    height: 300px;
-    background-color: #F5F5F5;
+.search-box input {
+    background-color: var(--grey-0);
+    width: 246px;
+    border: none;
+    padding-left: 3%;
 }
 
-.carrinhoVazio h2 {
-    position: absolute;
-    left: 170px;
-    top: 100px;
-    color: #333333;
-    font-size: 27px;
+.search-box button {
+    background-color: var(--color-secondary);
+    color: white;
+    width: 96px;
+    border: none;
+    text-decoration: none;
 }
 
-.carrinhoVazio p {
-    position: absolute;
-    left: 205px;
-    top: 140px;
-    color: #333333;
-    font-size: 20px;
+.shopping-cart {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.shopping-cart h3 {
+    background-color: var(--color-secondary);
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 15px 0;
+    margin: 0 auto;
+}
+
+.shopping-cart-inside {
+    width: 100%;
+    border: 1px solid var(--grey-0);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 214px;
+    max-height: 260px;
+    background-color: var(--grey-0);
+    overflow: auto;
+}
+
+#box-aviso {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#box-aviso h4,
+#box-aviso p {
+    margin: 10px 0;
+}
+
+.esconder {
+    display: none;
+}
+
+.card-carrinho {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px 20px;
+    border: none;
+}
+
+.card-carrinho figure {
+    margin: 0 20px 0 0;
+    width: 90px;
+    height: 90px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-carrinho img {
+    width: 100%;
+}
+
+.card-carrinho div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.card-carrinho div a,
+.card-carrinho div h4,
+.card-carrinho div p {
+    margin: 0;
+    font-size: 14px;
+}
+
+#sum-box {
+    width: 100%;
+    height: 126px;
+    background-color: var(--grey-100);
+    color: white;
+}
+
+#sum-box ul {
+    padding: 0 40px;
+}
+
+#sum-box ul li {
+    display: flex;
+    justify-content: space-between;
 }

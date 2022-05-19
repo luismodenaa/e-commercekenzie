@@ -2,117 +2,70 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>E-Commerce</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
     <script defer src="./script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap" rel="stylesheet" />
 </head>
 
 <body>
-    <header class="menuTop">
-        <img src="./img/logo.png" alt="logosite">
-        <div class="menuRight">
-            <div class="menu">
-                <nav>
-                    <ul>
-                        <li><a href="">Todos</a></li>
-                        <li><a href="">Acessórios</a></li>
-                        <li><a href="">Calçados</a></li>
-                        <li><a href="">Camisetas</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
+    <header>
+        <h1>Weartake</h1>
+        <section>
+            <ul class="menu">
+                <li>
+                    <a href="#" id="all" class="filter-selected">Todos</a>
+                </li>
+                <li>
+                    <a href="#" id="accessories">Acessórios</a>
+                </li>
+                <li>
+                    <a href="#" id="shoes">Calçados</a>
+                </li>
+                <li>
+                    <a href="#" id="shirts">Camisetas</a>
+                </li>
+            </ul>
+        </section>
     </header>
-    <main class="container">
-        <div class="products">
-            <ul>
-                <li class="cards">
-                    <div class="backImg">
-                        <img class="imgCard" width="305" src="./img/products/moletom.svg" alt="Moletom">
+    <div class="main-content">
+        <main>
+            <ul class="products"></ul>
+        </main>
+
+        <aside>
+            <section class="search-box">
+                <input type="text" placeholder="Digite aqui sua pesquisa" />
+                <button>Pesquisar</button>
+            </section>
+            <section class="shopping-cart">
+                <h3>Carrinho de Compras</h3>
+
+                <div class="shopping-cart-inside">
+                    <div id="box-aviso">
+                        <h4>Carrinho vazio</h4>
+                        <p>Adicione itens</p>
                     </div>
-                    <h1>Camisetas</h1>
-                    <h2 class="nameProduct">Lightweight Jacket</h2>
-                    <p class="productDesc">Adicione um pouco de energia ao seu guarda-roupa de inverno com esta jaqueta vibrante...</p>
-                    <h3 class="productPrice">R$ 100.00</h3>
-                    <a href="">Adicionar ao carrinho</a>
-                </li>
-            </ul>
-            <ul>
-                <li class="cards">
-                    <div class="backImg">
-                        <img class="imgCard" width="305" src="./img/products/gorro.svg" alt="Touca">
-                    </div>
-                    <h1>Acessórios</h1>
-                    <h2 class="nameProduct">Black Hat</h2>
-                    <p class="productDesc">O gorro Next.js chegou! Esta beldade bordada tem um ajuste confortável que garante que...</p>
-                    <h3 class="productPrice">R$ 100.00</h3>
-                    <a href="">Adicionar ao carrinho</a>
-                </li>
-            </ul>
-            <ul>
-                <li class="cards">
-                    <div class="backImg">
-                        <img class="imgCard" width="305" src="./img/products/mascara.svg" alt="Mascara">
-                    </div>
-                    <h1>Acessórios</h1>
-                    <h2 class="nameProduct">Mask</h2>
-                    <p class="productDesc">Esta máscara facial durável é feita de duas camadas de tecido tratado e possui presilhas...</p>
-                    <h3 class="productPrice">R$ 100.00</h3>
-                    <a href="">Adicionar ao carrinho</a>
-                </li>
-            </ul>
-            <ul>
-                <li class="cards">
-                    <div class="backImg">
-                        <img class="imgCard" width="305" src="./img/products/camiseta_branca.svg" alt="Camisa Branca">
-                    </div>
-                    <h1>Camisetas</h1>
-                    <h2 class="nameProduct">T-Shirt</h2>
-                    <p class="productDesc">Esta t-shirt é imprescindível no seu guarda-roupa, combinando o caimento intemporal de...</p>
-                    <h3 class="productPrice">R$ 100.00</h3>
-                    <a href="">Adicionar ao carrinho</a>
-                </li>
-            </ul>
-            <ul>
-                <li class="cards">
-                    <div class="backImg">
-                        <img class="imgCard" width="305" src="./img/products/camiseta_preta.svg" alt="Camisa Preta Lisa">
-                    </div>
-                    <h1>Camisetas</h1>
-                    <h2 class="nameProduct">Short-Sleeve T-Shirt</h2>
-                    <p class="productDesc">Agora você encontrou a camiseta básica do seu guarda-roupa. É feito de um mais fino...</p>
-                    <h3 class="productPrice">R$ 100.00</h3>
-                    <a href="">Adicionar ao carrinho</a>
-                </li>
-            </ul>
-            <ul>
-                <li class="cards">
-                    <div class="backImg">
-                        <img class="imgCard" width="305" src="./img/products/jaqueta.svg" alt="Jaqueta">
-                    </div>
-                    <h1>Camisetas</h1>
-                    <h2 class="nameProduct">Champion Packable Jacket</h2>
-                    <p class="productDesc">Proteja-se dos elementos com esta jaqueta embalável Champion. Esta jaqueta de poliést...</p>
-                    <h3 class="productPrice">R$ 100.00</h3>
-                    <a href="">Adicionar ao carrinho</a>
-                </li>
-            </ul>
-        </div>
-        <div class="columnRight">
-            <div class="search">
-                <input type="text" placeholder="Digite aqui sua pesquisa">
-                <a href="">Pesquisar</a>
-            </div>
-            <div class="carrinho">
-                <h2>Carrinho de compras</h2>
-            </div>
-            <div class="carrinhoVazio">
-                <h2>Carrinho vazio</h2>
-                <p>Adicione itens</p>
-            </div>
-        </div>
-    </main>
+                </div>
+
+                <div id="sum-box" class="esconder">
+                    <ul>
+                        <li>
+                            <p><strong>Quantidade:</strong></p>
+                            <p id="quantidade-total">2</p>
+                        </li>
+                        <li>
+                            <p><strong>Total:</strong></p>
+                            <p id="valor-total">R$ 200.00</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </aside>
+    </div>
 </body>
 
 </html>
