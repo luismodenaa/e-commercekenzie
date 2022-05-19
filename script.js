@@ -206,7 +206,6 @@ function refreshCart() {
             section.addEventListener('click', (e) => {
                 e.preventDefault()
                 if (e.target.id == 'remove') {
-                    //carrinho = carrinho.filter((x) => x.id != Number(e.currentTarget.id[1]))
                     carrinho.splice(Number(e.currentTarget.id[1]), 1)
                     refreshCart()
                 }
