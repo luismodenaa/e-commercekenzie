@@ -38,7 +38,7 @@ a {
     font-weight: bold;
 }
 
-.main-content {
+.container {
     display: flex;
     justify-content: space-between;
     gap: 80px;
