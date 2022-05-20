@@ -255,6 +255,20 @@ function menuHandler() {
     })
 }
 
+const searchButton = document.querySelector('button')
+const input = document.querySelector('input')
+
+searchButton.addEventListener('click', function() {
+    let text = input.value.toLowerCase()
+    console.log(text)
+
+    filteredData = data.filter(function(x) { return x.nameItem.toLowerCase().includes(text) })
+
+    console.log(filteredData)
+
+    refreshProductsList()
+})
+
 refreshProductsList()
 
 createMenuList()
